@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+*:not(div) {
+    filter: drop-shadow(0 0 10px #d8b75640);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'SpoqaHanSans', 'Spoqa Han Sans', 'Spoqa Han Sans KR', '나눔바른고딕', arial;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    user-select: none;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  
+    -webkit-transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+}
+  
+.pace.pace-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+  
+.pace .pace-progress {
+    position: fixed;
+    z-index: 2000;
+    top: 98.5vh;
+    right: 100%;
+    width: 100%;
+    height: 1.5vh;
+    background: linear-gradient(to Right, #d8b856, #d89f56);
+    box-shadow: 0 5px 1.5vh #786322;
+}
+
+#mainContainer {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100vw auto;
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#portfoli {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    color: #d8b856;
+}
+
+#o {
+    letter-spacing: 0;
+}
+
+#wait {
+    opacity: 0.5;
+    position: absolute;
+    margin-top: 3.2em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    color: #d8b856;
+}
+
+.decoration {
+    opacity: 0.5;
+    position: absolute;
+    width: 6em;
+}
+
+#circle {
+    top: 38vh;
+    left: 27vw;
+}
+
+#arrow {
+    top: 85vh;
+    left: 20vw;
+}
+
+#circles {
+    top: 70vh;
+    right: 20vw;
+}
+
+#dot {
+    top: 30vh;
+    right: 27vw;
+}
+
+#downArrow {
+    filter: invert(90%) sepia(15%) saturate(1759%) hue-rotate(339deg) brightness(90%) contrast(88%);
+    top: 94vh;
+    position: absolute;
+    color: #222;
+    font-size: 4em;
+    animation-duration: 3s;
+    animation-name: arrowPingPong;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes arrowPingPong {
+    0% { top: 94vh; }
+    50% { top: 96vh; }
+    100% { top: 94vh; }
+}
+
+#secondContainer {
+    letter-spacing: -3px;
+    background-color: #d8b856;
+    width: 92vw;
+    height: 86vh;
+    padding: 7vh 4vw 7vh 4vw;
+}
+
+#education {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    padding: 2px 10px 2px 10px;
+    background-color: #f0f0f0;
+    color: #d8b856;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.contents_detail {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    color: #f0f0f0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.contents_bold {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+#hat {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    position: absolute;
+    right: 4vw;
+    top: 175vh;
+}
+
+.s_decoration {
+    filter: invert(0%) sepia(100%) saturate(0%) brightness(200%);
+    opacity: 0.5;
+    position: absolute;
+    width: 6em;
+}
+
+#s_arrow {
+    top: 185vh;
+    left: 50vw;
+}
+
+#s_circles {
+    top: 120vh;
+    right: 30vw;
+}
+
+#s_dot {
+    top: 165vh;
+    left: 20vw;
+}
+
+#thirdContainer {
+    text-align: right;
+    letter-spacing: -3px;
+    background-color: #d8b856;
+    width: 92vw;
+    height: 86vh;
+    padding: 7vh 4vw 7vh 4vw;
+}
+
+#information {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    padding: 2px 10px 2px 10px;
+    background-color: #f0f0f0;
+    color: #d8b856;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+#sdvx {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    position: absolute;
+    height: 30vh;
+    left: 4vw;
+    top: 263vh;
+}
+
+#t_arrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    top: 275vh;
+    right: 20vw;
+}
+
+#t_circles {
+    top: 230vh;
+    left: 20vw;
+}
+
+#t_dot {
+    top: 220vh;
+    right: 40vw;
+}
+
+.t_decoration {
+    filter: invert(0%) sepia(100%) saturate(0%) brightness(200%);
+    opacity: 0.5;
+    position: absolute;
+    width: 6em;
+}
+
+#forthContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: -3px;
+    text-align: center;
+    background-color: #d8b856;
+    width: 100vw;
+    height: 95vh;
+    padding-top: 5vh;
+}
+
+#awards {
+    filter: drop-shadow(0 0 5px #1d1d1d20);
+    padding: 2px 10px 2px 10px;
+    background-color: #f0f0f0;
+    color: #d8b856;
+    font-size: 4em;
+    font-weight: 900;
+}
