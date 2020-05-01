@@ -2,4 +2,4 @@
 ![Web-Portfolio](./images/portfolio.png)
 > Want to know more about Coupy?
 
-https://cp.croissant.tech/
+https://coupy.dev/
