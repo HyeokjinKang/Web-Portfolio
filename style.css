@@ -92,6 +92,7 @@ body {
     opacity: 0.5;
     position: absolute;
     width: 6vw;
+    user-select: none;
 }
 
 #circle {
@@ -123,6 +124,7 @@ body {
     animation-duration: 3s;
     animation-name: arrowPingPong;
     animation-iteration-count: infinite;
+    user-select: none;
 }
   
 @keyframes arrowPingPong {
@@ -152,6 +154,7 @@ body {
     width: 50%;
     float: left;
     text-align: right;
+    user-select: none;
 }
 
 .contentsTitle {
