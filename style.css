@@ -1,33 +1,31 @@
-@import url('https://cdn.rhyga.me/fonts/Metropolis/style.css');
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('fonts/Metropolis/style.css');
 
-*:not(div) {
-    filter: drop-shadow(0 0 10px #d8b75640);
+*:not(div):not(body) {
+    filter: drop-shadow(0 0 5px #d8b75640);
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Metropolis', 'SpoqaHanSans', 'Spoqa Han Sans', 'Spoqa Han Sans KR', '나눔바른고딕', arial;
-    overflow-y: hidden;
+    font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕', arial;
     overflow-x: hidden;
+    color: #dbb134;
+    letter-spacing: -2px;
+    background-color: #f0f0f0;
 }
 
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
-  
     -webkit-user-select: none;
     user-select: none;
-  
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-  
     -webkit-transform: translate3d(0, 50px, 0);
     transform: translate3d(0, 50px, 0);
-  
     -webkit-transition: -webkit-transform .5s ease-out;
     transition: transform .5s ease-out;
 }
@@ -64,32 +62,32 @@ body {
     height: 100vh;
 }
 
-#portfoli {
+#namespace {
     text-align: center;
-    font-weight: 900;
-    font-size: 2.5em;
-    letter-spacing: 0.2em;
-    color: #d8b856;
+    font-weight: 800;
+    font-size: 4vh;
 }
 
-#o {
-    letter-spacing: 0;
+#coupy {
+    text-align: center;
+    margin-top: -0.5vh;
+    font-weight: 400;
+    font-size: 2.3vh;
 }
 
 #wait {
     opacity: 0.5;
-    position: absolute;
-    margin-top: 3.2em;
+    margin-top: 0.5vh;
     text-align: center;
     font-weight: 600;
-    font-size: 1em;
-    color: #d8b856;
+    font-size: 2vh;
+    transition-duration: .5s;
 }
 
 .decoration {
     opacity: 0.5;
     position: absolute;
-    width: 6em;
+    width: 6vw;
 }
 
 #circle {
@@ -113,11 +111,11 @@ body {
 }
 
 #downArrow {
-    filter: invert(90%) sepia(15%) saturate(1759%) hue-rotate(339deg) brightness(90%) contrast(88%);
+    filter: invert(90%) sepia(15%) saturate(1759%) hue-rotate(339deg) brightness(90%) contrast(88%) drop-shadow(0 0 10px #d8b75640);
     top: 94vh;
     position: absolute;
     color: #222;
-    font-size: 4em;
+    font-size: 3vh;
     animation-duration: 3s;
     animation-name: arrowPingPong;
     animation-iteration-count: infinite;
@@ -129,131 +127,102 @@ body {
     100% { top: 94vh; }
 }
 
-#secondContainer {
-    letter-spacing: -3px;
-    background-color: #d8b856;
-    width: 92vw;
-    height: 86vh;
-    padding: 7vh 4vw 7vh 4vw;
-}
-
-#education {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    padding: 2px 10px 2px 10px;
+.contentsContainer {
+    padding: 10vh;
     background-color: #f0f0f0;
-    color: #d8b856;
-    font-size: 4em;
-    font-weight: 900;
+    width: calc(100vw - 20vh);
+    height: 80vh;
 }
 
-.contents_detail {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    color: #f0f0f0;
-    font-size: 1.5em;
-    font-weight: 400;
+.contentsTopContainer {
+    width: 100%;
+    height: 20vh;
 }
 
-.contents_bold {
-    font-size: 1.7em;
-    font-weight: 900;
+.contentsTopLeftContainer {
+    width: 50%;
+    float: left;
 }
 
-#hat {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    position: absolute;
-    right: 4vw;
-    top: 175vh;
-}
-
-.s_decoration {
-    filter: invert(0%) sepia(100%) saturate(0%) brightness(200%);
-    opacity: 0.5;
-    position: absolute;
-    width: 6em;
-}
-
-#s_arrow {
-    top: 185vh;
-    left: 50vw;
-}
-
-#s_circles {
-    top: 120vh;
-    right: 30vw;
-}
-
-#s_dot {
-    top: 165vh;
-    left: 20vw;
-}
-
-#thirdContainer {
+.contentsTopRightContainer {
+    width: 50%;
+    float: left;
     text-align: right;
-    letter-spacing: -3px;
-    background-color: #d8b856;
-    width: 92vw;
-    height: 86vh;
-    padding: 7vh 4vw 7vh 4vw;
 }
 
-#information {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    padding: 2px 10px 2px 10px;
-    background-color: #f0f0f0;
-    color: #d8b856;
-    font-size: 4em;
-    font-weight: 900;
+.contentsTitle {
+    letter-spacing: -5px;
+    font-weight: 300;
+    font-size: 5vh;
+    line-height: 105%;
 }
 
-#sdvx {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    position: absolute;
-    height: 30vh;
-    left: 4vw;
-    top: 263vh;
+.contentsSubTitle {
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    font-size: 2.5vh;
 }
 
-#t_arrow {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    top: 275vh;
+.contentsText {
+    color: rgb(141, 99, 90);
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+#dot2 {
+    top: 150vh;
+    left: 17vw;
+}
+
+#arrow2 {
+    top: 180vh;
     right: 20vw;
+    transform: rotate(180deg);
 }
 
-#t_circles {
-    top: 230vh;
-    left: 20vw;
-}
-
-#t_dot {
-    top: 220vh;
-    right: 40vw;
-}
-
-.t_decoration {
-    filter: invert(0%) sepia(100%) saturate(0%) brightness(200%);
-    opacity: 0.5;
-    position: absolute;
-    width: 6em;
-}
-
-#forthContainer {
+.contentsBoxContainer {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    letter-spacing: -3px;
-    text-align: center;
-    background-color: #d8b856;
-    width: 100vw;
-    height: 95vh;
-    padding-top: 5vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    width: 90%;
+    height: 50vh;
 }
 
-#awards {
-    filter: drop-shadow(0 0 5px #1d1d1d20);
-    padding: 2px 10px 2px 10px;
-    background-color: #f0f0f0;
-    color: #d8b856;
-    font-size: 4em;
-    font-weight: 900;
+.contentsBoxButtons {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 20vh;
+    height: 20vh;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.05));
+}
+
+.contentsBoxImage {
+    width: 15vh;
+}
+
+.contentsBoxFullImage {
+    width: 100%;
+    border-radius: 10px;
+    filter: none;
+}
+
+#circle2 {
+    top: 240vh;
+    left: 15vw;
+}
+
+#circles2 {
+    top: 280vh;
+    right: 15vw;
+}
+
+#squares {
+    width: 3vw;
+    top: 380vh;
+    right: 10vw;
 }

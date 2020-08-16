@@ -1,0 +1,55 @@
+@font-face {
+font-family: 'Metropolis';
+font-weight: 400;
+src: local('Metropolis Regular'), url('Metropolis-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 200;
+src: local('Metropolis Extra Light'), url('Metropolis-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 300;
+src: local('Metropolis Light'), url('Metropolis-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 100;
+src: local('Metropolis Thin'), url('Metropolis-Thin.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 500;
+src: local('Metropolis Medium'), url('Metropolis-Medium.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 600;
+src: local('Metropolis Semi Bold'), url('Metropolis-SemiBold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 700;
+src: local('Metropolis Bold'), url('Metropolis-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 800;
+src: local('Metropolis Extra Bold'), url('Metropolis-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Metropolis';
+font-weight: 900;
+src: local('Metropolis Black'), url('Metropolis-Black.woff') format('woff');
+}
