@@ -11,10 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/pace.js"></script>
-    <link rel="stylesheet" href="style.css?ver=6.0">
-    <script>
-        document.getElementsByTagName('link')[1].href = `style.css?ver=${Math.random()}`;
-    </script>
+    <link rel="stylesheet" href="style.css?ver=8.0">
     <title>Coupy</title>
 </head>
 <body>
@@ -88,7 +85,7 @@
     <div class="contentsContainer">
         <div class="contentsTopContainer">
             <div class="contentsTopLeftContainer">
-                <span class="contentsTitle"><strong>선과 점</strong>하나하나가<br>사용자의 <strong>첫인상을 결정</strong>합니다.</span>
+                <span class="contentsTitle"><strong>선과 점</strong> 하나하나가<br>사용자의 <strong>첫인상을 결정</strong>합니다.</span>
             </div>
             <div class="contentsTopRightContainer">
                 ■&nbsp;&nbsp;■<br>
@@ -143,9 +140,7 @@
         <span id="coupy">이 아래부턴 공사중입니다. 다음에 방문해주세요 ;D</span>
     </div>
     <script>
-        alert("공사중인 페이지입니다!\n현재는 완성된 부분까지만 열람이 가능합니다.");
         document.documentElement.scrollTop = 0;
-        document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 2].src = `scripts/script.js?ver=${Math.random()}`;
         Pace.on('done', () => {
             setTimeout(() => {
                 document.getElementById('wait').style.opacity = 0;
@@ -172,9 +167,10 @@
                 }
                 elements = document.getElementsByClassName('contentsContainer');
                 elements[1].style.height = 'auto';
+                elements[3].style.height = 'auto';
             }
         });
     </script>
-    <script src="scripts/script.js?ver=6.0"></script>
+    <script src="scripts/script.js?ver=7.0"></script>
 </body>
 </html>

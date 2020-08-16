@@ -5,6 +5,10 @@
     filter: drop-shadow(0 0 5px #d8b75640);
 }
 
+span {
+    word-break: keep-all;
+}
+
 body {
     margin: 0;
     padding: 0;
